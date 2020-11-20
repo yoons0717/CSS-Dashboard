@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script type="text/javascript" src="calender.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <title>DashBoard</title>
+</head>
+<body>
+    <div class="container">
+        <section class="navigation">           
+            <i class="fas fa-user-circle circle-back"></i>                  
+            <i class="fas fa-chart-pie circle-back"></i>          
+            <i class="far fa-calendar-alt circle-back"></i>
+            <i class="far fa-folder circle-back"></i>
+            <i class="fas fa-user-friends circle-back"></i>
+            <i class="fas fa-cog circle-back"></i>
+            <i class="fas fa-power-off circle-back"></i>
+        </section>
+        <section class="dashboard">
+            <div class="dash_title">Dashboard</div>
+            <div class="dash-menu">
+                <div class="btns">
+                    <i class="fas fa-user-friends i-client"></i>
+                    <span>Clients</span>
+                    <span class="number">200</span>
+                </div>
+                <div class="btns">
+                    <i class="far fa-check-square i-tasks"></i>
+                    <span>Current Tasks</span> 
+                    <span class="number">200</span>
+                </div>
+                <div class="btns">
+                    <i class="fas fa-sync-alt i-nego"></i>
+                    <span>Projects in negotiations</span>
+                    <span class="number">200</span>
+                </div>
+            </div>
+            <div class="visitors">
+                <h3>Portofolio visitors</h3>
+                
+            <canvas id="myChart" width="700" height="300"></canvas>
+            <script type="text/javascript" src="chart.js"></script>
+            </div>
+            
+        </section>
+        <section class="schedule">
+           
+                <table id="calendar" >
+                    <tr><!-- label은 마우스로 클릭을 편하게 해줌 -->
+                        <td><label onclick="prevCalendar()"><</label></td>
+                        <td align="center" id="tbCalendarYM" colspan="5">
+                        </td>
+                        <td><label onclick="nextCalendar()">>
+                            
+                        </label></td>
+                    </tr>
+                    <tr>
+                        <td>Sun</td>
+                        <td>Mon</td>
+                        <td>Tue</td>
+                        <td>Wed</td>
+                        <td>Thu</td>
+                        <td>Fri</td>
+                        <td>Sat</td>
+                    </tr> 
+                </table>
+                <script language="javascript" type="text/javascript">
+                    buildCalendar();//
+                </script>
+            
+            <div class="upcoming">
+                <h3>Schedule</h3>
+                <p class="time">
+                    <i class="far fa-circle i-circle"></i>
+                    Today, 10:30 - 11:00
+                </p>
+                <div class="wrapper">
+                    <p class="sche_name">Project discussion with Yoonmi/Goo</p>
+                    <span class="tag">UI Design</span>
+                    <span class="tag">Prototype</span>
+                    <div class="banner">
+                        
+                    </div>
+                </div>
+            </div>
+          
+        </section>
+    </div>
+</body>
+</html>

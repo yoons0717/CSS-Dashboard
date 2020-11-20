@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/* color */
+/* Size */
+/* Font Size */
+* {
+  font-family: Consolas, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: #fff;
+}
+
+html,
+body {
+  width: 100%;
+  padding: 35px;
+  background: linear-gradient(to bottom right, #d6cefb, #fbe4e5, #e0eaf3);
+}
+
+ul {
+  list-style-type: none;
+}
+
+h3 {
+  color: #271e4a;
+}
+
+/* 전체적인 레이아웃 */
+.container {
+  display: flex;
+  border-radius: 15px;
+}
+
+.container .navigation:nth-child(1) {
+  flex-shrink: 0;
+  width: 100px;
+}
+
+.container .dashboard:nth-child(2) {
+  flex-grow: 1;
+}
+
+.container .schedule:nth-child(3) {
+  width: 400px;
+}
+
+.container .navigation {
+  background-color: rgba(255, 255, 255, 0.23);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .navigation i {
+  font-size: 25px;
+  margin: 20px;
+  color: #afb0c8;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.container .navigation .circle-back:hover {
+  background-color: white;
+  padding: 10px;
+  border-radius: 30%;
+  color: #6f7292;
+}
+
+.container .dashboard {
+  background-color: rgba(255, 255, 255, 0.33);
+  padding: 50px;
+}
+
+.container .schedule {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.dashboard .dash_title {
+  color: #271e4a;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.dashboard .dash-menu {
+  flex-wrap: nowrap;
+}
+
+.dashboard .dash-menu .btns {
+  background-color: #fff;
+  /* Green */
+  border: none;
+  color: black;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 15px 15px 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.dashboard .dash-menu .btns .i-client {
+  color: #a382cc;
+}
+
+.dashboard .dash-menu .btns .i-tasks {
+  color: #ff9999;
+}
+
+.dashboard .dash-menu .btns .i-nego {
+  color: #ffbb9d;
+}
+
+.dashboard .dash-menu .btns .number {
+  margin-left: 20px;
+}
+
+.dashboard .visitors {
+  margin: 50px;
+}
+
+.dashboard .visitors h3 {
+  margin-bottom: 50px;
+}
+
+.schedule {
+  padding: 24px;
+}
+
+.schedule h3 {
+  margin-bottom: 12px;
+}
+
+.schedule table {
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+.schedule table th {
+  text-align: left;
+  padding-left: 6px;
+}
+
+.schedule table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.schedule .upcoming .time {
+  color: #909090;
+  margin-top: 24px;
+}
+
+.schedule .upcoming .time .i-circle {
+  color: #fea7a7;
+  font-size: 2px;
+  font-weight: bold;
+}
+
+.schedule .upcoming .wrapper {
+  padding-left: 24px;
+  margin-top: 24px;
+}
+
+.schedule .upcoming .wrapper .sche_name {
+  color: #271e4a;
+  padding-bottom: 24px;
+}
+
+.schedule .upcoming .wrapper .tag {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid #edeef2;
+  font-size: 12px;
+}
+
+.schedule .upcoming .wrapper .banner {
+  background-color: #b28ce7;
+  margin-top: 24px;
+  color: #fff;
+  width: 300px;
+  height: 100px;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=style.css.map */
